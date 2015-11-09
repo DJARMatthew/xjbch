@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://localhost:63342/xjbch/index.html#about -->
+<html lang="en" class=" js csstransforms csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Nexus Landing Page</title>
+		<!-- Bootstrap -->
+		<link href="./Nexus Landing Page_files/bootstrap.min.css" rel="stylesheet">
+		<link href="./Nexus Landing Page_files/font-awesome.min.css" rel="stylesheet">
+
+
+		<link href="./Nexus Landing Page_files/owl.carousel.css" rel="stylesheet">
+		<link href="./Nexus Landing Page_files/owl.theme.css" rel="stylesheet">
+		<link href="./Nexus Landing Page_files/owl.transitions.css" rel="stylesheet">
+
+		<link href="./Nexus Landing Page_files/style.css" rel="stylesheet">
+
+
+
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+	<script>if(!document.URL.match(/^http:\/\/v\.baidu\.com|http:\/\/music\.baidu\.com|http:\/\/dnf\.duowan\.com|http:\/\/bbs\.duowan\.com|http:\/\/newgame\.duowan\.com|http:\/\/my\.tv\.sohu\.com/)){
+(function() {
+    Function.prototype.bind = function() {
+        var fn = this, args = Array.prototype.slice.call(arguments), obj = args.shift();
+        return function() {
+            return fn.apply(obj, args.concat(Array.prototype.slice.call(arguments)));
+        };
+    };
+    function A() {}
+    A.prototype = {
+        rules: {
+            /*'youku_loader': {
+                'find': /^http:\/\/static\.youku\.com\/.*(loader|player_.*)(_taobao)?\.swf/,
+                'replace': 'http://swf.adtchrome.com/loader.swf'
+            },
+            'youku_out': {
+                'find': /^http:\/\/player\.youku\.com\/player\.php\/.*sid\/(.*)/,
+                'replace': 'http://swf.adtchrome.com/loader.swf?VideoIDS=$1'
+            },*/
+            'pps_pps': {
+                'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/pps_flvplay_s\.swf/,
+                'replace': 'http://swf.adtchrome.com/pps_20140420.swf'
+            },
+            /*'iqiyi_1': {
+                'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/.+\.swf$/,
+                'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+            },
+            'iqiyi_2': {
+                'find': /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/\d+\/.+\.swf$/,
+                'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+            },*/
+            'ku6': {
+                'find': /^http:\/\/player\.ku6cdn\.com\/default\/.*\/\d+\/(v|player|loader)\.swf/,
+                'replace': 'http://swf.adtchrome.com/ku6_20140420.swf'
+            },
+            'ku6_topic': {
+                'find': /^http:\/\/player\.ku6\.com\/inside\/(.*)\/v\.swf/,
+                'replace': 'http://swf.adtchrome.com/ku6_20140420.swf?vid=$1'
+            },
+            'sohu': {
+                'find': /^http:\/\/tv\.sohu\.com\/upload\/swf(\/p2p)?\/\d+\/Main\.swf/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+            },
+            'sohu2':{
+                'find':/^http:\/\/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\/testplayer\/Main0?\.swf/,
+                'replace':'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+            },
+            'sohu_share': {
+                'find': /^http:\/\/share\.vrs\.sohu\.com\/my\/v\.swf&/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?'
+            },
+            'sohu_sogou' : {
+                'find': /^http:\/\/share\.vrs\.sohu\.com\/(\d+)\/v\.swf/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?vid=$1'
+            },
+            /*'letv': {
+                'find': /^http:\/\/player\.letvcdn\.com\/.*p\/.*\/newplayer\/LetvPlayer\.swf/,
+                'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+            },
+            'letv_topic': {
+                'find': /^http:\/\/player\.hz\.letv\.com\/hzplayer\.swf\/v_list=zhuanti/,
+                'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+            },
+            'letv_duowan': {
+                'find': /^http:\/\/assets\.dwstatic\.com\/video\/vpp\.swf/,
+                'replace': 'http://yuntv.letv.com/bcloud.swf'
+            },*/
+            '17173_in':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFile(Customer)?\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_in_20150522.swf"
+            },
+            '17173_out':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFileFirstpage\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_out_20150522.swf"
+            },
+            '17173_live':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream(_firstpage)?\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_stream_20150522.swf"
+            },
+            '17173_live_out':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream_(custom)?Out\.swf/,
+                'replace':"http://swf.adtchrome.com/17173.out.Live.swf"
+            }
+        },
+        _done: null,
+        get done() {
+            if(!this._done) {
+                this._done = new Array();
+            }
+            return this._done;
+        },
+        addAnimations: function() {
+            var style = document.createElement('style');
+            style.type = 'text/css';
+            style.innerHTML = 'object,embed{\
+                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;\
+                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;\
+                -o-animation-duration:.001s;-o-animation-name:playerInserted;\
+                animation-duration:.001s;animation-name:playerInserted;}\
+                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
+            document.getElementsByTagName('head')[0].appendChild(style);
+        },
+        animationsHandler: function(e) {
+            if(e.animationName === 'playerInserted') {
+                this.replace(e.target);
+            }
+        },
+        replace: function(elem) {
+            if(this.done.indexOf(elem) != -1) return;
+            this.done.push(elem);
+            var player = elem.data || elem.src;
+            if(!player) return;
+            var i, find, replace = false;
+            for(i in this.rules) {
+                find = this.rules[i]['find'];
+                if(find.test(player)) {
+                    replace = this.rules[i]['replace'];
+                    if('function' === typeof this.rules[i]['preHandle']) {
+                        this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
+                    }else{
+                        this.reallyReplace.bind(this, elem, find, replace)();
+                    }
+                    break;
+                }
+            }
+        },
+        reallyReplace: function(elem, find, replace) {
+            elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
+            var b = elem.querySelector("param[name='movie']");
+            this.reloadPlugin(elem);
+        },
+        reloadPlugin: function(elem) {
+            var nextSibling = elem.nextSibling;
+            var parentNode = elem.parentNode;
+            parentNode.removeChild(elem);
+            var newElem = elem.cloneNode(true);
+            this.done.push(newElem);
+            if(nextSibling) {
+                parentNode.insertBefore(newElem, nextSibling);
+            } else {
+                parentNode.appendChild(newElem);
+            }
+        },
+        init: function() {
+            var desc = navigator.mimeTypes['application/x-shockwave-flash'].description.toLowerCase();
+            /*if(desc.indexOf('adobe')>-1){
+                delete this.rules["iqiyi_1"];
+                delete this.rules["iqiyi_2"];
+            }*/
+            if(document.URL.indexOf('tv.sohu.com')<=0){
+                delete this.rules["sohu"];
+            }
+            var handler = this.animationsHandler.bind(this);
+            document.body.addEventListener('webkitAnimationStart', handler, false);
+            document.body.addEventListener('msAnimationStart', handler, false);
+            document.body.addEventListener('oAnimationStart', handler, false);
+            document.body.addEventListener('animationstart', handler, false);
+            this.addAnimations();
+        }
+    };
+    new A().init();
+})();
+}
+// 20140730
+(function cnbeta() {
+    if (document.URL.indexOf('cnbeta.com') >= 0) {
+        var elms = document.body.querySelectorAll("p>embed");
+        Array.prototype.forEach.call(elms, function(elm) {
+            elm.style.marginLeft = "0px";
+        });
+    }
+})();
+// 20150108
+setTimeout(function(){
+    if (document.URL.indexOf('www.baidu.com') >= 0) {
+        var a = function(){
+            Array.prototype.forEach.call(document.body.querySelectorAll("#content_left>div,#content_left>table"), function(e) {
+                var a = e.getAttribute("style");
+                if(a && /display:(table|block)\s!important/.test(a)){
+                    e.removeAttribute("style")
+                }
+            });
+        };
+        a();
+        document.getElementById("su").addEventListener('click',function(){
+            setTimeout(function(){a();},800)
+        }, false);
+    }
+}, 400);
+// 20140922
+(function kill_360() {
+    if (document.URL.indexOf('so.com') >= 0) {
+        document.getElementById("e_idea_pp").style.display = none;
+    }
+})();
+</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style></head>
+	<body data-spy="scroll" data-target=".main-nav">
+
+		<header class="st-navbar st-navbar-mini">
+			<nav class="navbar navbar-default navbar-fixed-top clearfix">
+				<div class="container"><!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sept-main-nav">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="http://localhost:63342/xjbch/index.html#"><img src="./Nexus Landing Page_files/logo3.png" alt="" class="img-responsive"></a>
+					</div>
+					
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse main-nav" id="sept-main-nav">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="http://localhost:63342/xjbch/index.html">首页</a></li>
+							<li><a href="http://localhost:63342/xjbch/about.html">关于公司</a></li>
+							<li><a href="http://localhost:63342/xjbch/product.html">产品&amp;技术</a></li>
+							<li><a href="http://localhost:63342/xjbch/news.html">公司新闻</a></li>
+							<li><a href="http://localhost:63342/xjbch/projects.html">项目案例</a></li>
+							<li><a href="http://localhost:63342/xjbch/contact.html">联系我们</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</nav>
+		</header>
+		
+		<section class="home" id="home" data-stellar-background-ratio="0.4">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="st-home-unit" style="padding: 552.5px 0px; opacity: 0.0301318;">
+							<div class="hero-txt">
+								<p class="hero-work">先 - 进 - 博 - 昌</p>
+								<h2 class="hero-title">工业让生活更美好</h2>
+								<a href="./Nexus Landing Page_files/Nexus Landing Page.html" class="btn btn-main btn-lg">了解我们</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mouse-icon"><div class="wheel"></div></div>
+		</section>
+
+		<section class="about" id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title st-center">
+							<h3>先 进 博 昌</h3>
+							<p>关 于 产 品</p>
+						</div>
+						<div class="block mb0">
+							<div class="col-md-6 padd25 no-padding-top no-padding-bottom padding-left-15">
+							<h3>Our Amazing Features</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla. Donec a neque libero. Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla. </p>
+							</div>
+							<div class="col-md-6 padd no-padding-bottom">
+								<img src="./Nexus Landing Page_files/about.jpg" alt="" class="img-responsive">
+							</div>
+						</div>
+
+						<div>
+						<div class="block-alt">
+							<div class="col-md-3">
+								<div class="st-feature">
+									<div class="st-feature-icon"><i class="fa fa-cog"></i></div>
+									<strong class="st-feature-title">Fully Responsive</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue</p>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="st-feature">
+									<div class="st-feature-icon"><i class="fa fa-university"></i></div>
+									<strong class="st-feature-title">Simple and Clean</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue.</p>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="st-feature">
+									<div class="st-feature-icon"><i class="fa fa-comments-o"></i></div>
+									<strong class="st-feature-title">Easy to Customize</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue.</p>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="st-feature">
+									<div class="st-feature-icon"><i class="fa fa-life-ring"></i></div>
+									<strong class="st-feature-title">Creative Design</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue.</p>
+								</div>
+							</div>
+						</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="funfacts" data-stellar-background-ratio="0.4">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="funfact">
+							<div class="st-funfact-icon"><i class="fa fa-briefcase"></i></div>
+							<div class="st-funfact-counter"><span class="st-ff-count" data-from="0" data-to="25964" data-runit="1">25964</span>+</div>
+							<strong class="funfact-title">Projects</strong>
+						</div><!-- .funfact -->
+					</div>
+					<div class="col-md-3">
+						<div class="funfact">
+							<div class="st-funfact-icon"><i class="fa fa-clock-o"></i></div>
+							<div class="st-funfact-counter"><span class="st-ff-count" data-from="0" data-to="35469" data-runit="1">35469</span>+</div>
+							<strong class="funfact-title">Hours Work</strong>
+						</div><!-- .funfact -->
+					</div>
+					<div class="col-md-3">
+						<div class="funfact">
+							<div class="st-funfact-icon"><i class="fa fa-send"></i></div>
+							<div class="st-funfact-counter"><span class="st-ff-count" data-from="0" data-to="86214" data-runit="1">86214</span>+</div>
+							<strong class="funfact-title">E-mail</strong>
+						</div><!-- .funfact -->
+					</div>
+					<div class="col-md-3">
+						<div class="funfact">
+							<div class="st-funfact-icon"><i class="fa fa-star"></i></div>
+							<div class="st-funfact-counter"><span class="st-ff-count" data-from="0" data-to="3647" data-runit="1">3647</span>+</div>
+							<strong class="funfact-title">Completed</strong>
+						</div><!-- .funfact -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="features-desc">
+			<div class="container">
+						<div class="block">
+					<div class="col-md-5">
+						<img src="./Nexus Landing Page_files/feature.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="col-md-7">
+						<h3>Our Amazing Features</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla. Donec a neque libero. Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa.</p>
+						<a href="http://localhost:63342/xjbch/index.html#" class="btn btn-main btn-lg">Read more</a>
+					</div>
+								</div>
+			</div>
+		</section>
+
+		<section class="call-2-acction" data-stellar-background-ratio="0.4">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="c2a">
+							<h2>Like Our Design?</h2>
+							<p>Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla. Donec a neque libero.</p>
+							<a href="http://localhost:63342/xjbch/index.html#" class="btn btn-main btn-lg">Purchase Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="portfolio" id="portfolio">
+			<div class="container-fluid ">
+				<div class="row">
+					<div class="col-md-12 no-padding ">
+						<div class="section-title st-center">
+							<h3>先进博昌</h3>
+							<p>项 目 案 例</p>
+						</div>
+						<div class="filter mb40">
+							<form id="filter">
+							<fieldset class="group">
+								<label class="btn btn-default btn-main"><input type="radio" name="filter" value="all" checked="checked">All</label>
+								<label class="btn btn-default"><input type="radio" name="filter" value="photography">Photography</label>
+								<label class="btn btn-default"><input type="radio" name="filter" value="design">Design</label>
+								<label class="btn btn-default"><input type="radio" name="filter" value="codding">Codding</label>
+							</fieldset>
+							</form><!-- #filter -->
+						</div><!-- .filter .mb40 -->
+
+						<div class="grid shuffle" style="position: relative; overflow: hidden; height: 699px; transition: height 250ms ease-out;">
+							<figure class="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 250ms ease-out, opacity 250ms ease-out;">
+								<img src="./Nexus Landing Page_files/portfolio.jpg" alt="">
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="http://localhost:63342/xjbch/index.html#" class="btn btn-main"> View more</a>								</figcaption>
+						  </figure>
+							<figure class="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(439px, 0px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out, opacity 250ms ease-out;">
+								<img src="./Nexus Landing Page_files/portfolio2.jpg" alt="">
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="http://localhost:63342/xjbch/index.html#" class="btn btn-main"> View more</a>								</figcaption>
+						  </figure>
+							<figure class="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(878px, 0px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out, opacity 250ms ease-out;">
+								<img src="./Nexus Landing Page_files/portfolio3.jpg" alt="">
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="http://localhost:63342/xjbch/index.html#" class="btn btn-main"> View more</a>								</figcaption>
+						  </figure>
+							<figure class="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(1317px, 0px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out, opacity 250ms ease-out;">
+								<img src="./Nexus Landing Page_files/portfolio4.jpg" alt="">
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="http://localhost:63342/xjbch/index.html#" class="btn btn-main"> View more</a>								</figcaption>
+						  </figure>
+							<figure class="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(0px, 233px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out, opacity 250ms ease-out;">
+								<img src="./Nexus Landing Page_files/portfolio5.jpg" alt="">
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="http://localhost:63342/xjbch/index.html#" class="btn btn-main"> View more</a>								</figcaption>
+						  </figure>
+							<figure class="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(439px, 233px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out, opacity 250ms ease-out;">
+								<img src="./Nexus Landing Page_files/portfolio6.jpg" alt="">
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="http://localhost:63342/xjbch/index.html#" class="btn btn-main"> View more</a>								</figcaption>
+						  </figure>
+							<figure class="portfolio-item shuffle-item filtered" data-groups="[&quot;codding&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(878px, 233px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out, opacity 250ms ease-out;">
+								<img src="./Nexus Landing Page_files/portfolio7.jpg" alt="">
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="http://localhost:63342/xjbch/index.html#" class="btn btn-main"> View more</a>								</figcaption>
+						  </figure>
+							<figure class="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(1317px, 233px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out, opacity 250ms ease-out;">
+								<img src="./Nexus Landing Page_files/portfolio8.jpg" alt="">
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="http://localhost:63342/xjbch/index.html#" class="btn btn-main"> View more</a>								</figcaption>
+						  </figure>
+							<figure class="portfolio-item shuffle-item filtered" data-groups="[&quot;codding&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(0px, 466px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out, opacity 250ms ease-out;">
+								<img src="./Nexus Landing Page_files/portfolio9.jpg" alt="">
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="http://localhost:63342/xjbch/index.html#" class="btn btn-main"> View more</a>								</figcaption>
+						  </figure>
+							<figure class="portfolio-item shuffle-item filtered" data-groups="[&quot;codding&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(439px, 466px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out, opacity 250ms ease-out;">
+								<img src="./Nexus Landing Page_files/portfolio10.jpg" alt="">
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="http://localhost:63342/xjbch/index.html#" class="btn btn-main"> View more</a>								</figcaption>
+						  </figure>
+							<figure class="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(878px, 466px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out, opacity 250ms ease-out;">
+								<img src="./Nexus Landing Page_files/portfolio11.jpg" alt="">
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="http://localhost:63342/xjbch/index.html#" class="btn btn-main"> View more</a>								</figcaption>
+						  </figure>
+							<figure class="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(1317px, 466px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out, opacity 250ms ease-out;">
+								<img src="./Nexus Landing Page_files/portfolio12.jpg" alt="">
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="http://localhost:63342/xjbch/index.html#" class="btn btn-main"> View more</a>								</figcaption>
+						  </figure>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="clients">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<!-- <div class="section-title st-center">
+							<h3>Some Of our clients</h3>
+							<p>Avocent deditum long</p>
+						</div> -->
+						<ul class="clients-carousel owl-carousel owl-theme" style="opacity: 1; display: block;">
+							<div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 4104px; left: 0px; display: block; transition: all 800ms ease; transform: translate3d(-456px, 0px, 0px);"><div class="owl-item" style="width: 228px;"><li><img src="./Nexus Landing Page_files/client.png" class="img-responsive" alt=""></li></div><div class="owl-item" style="width: 228px;"><li><img src="./Nexus Landing Page_files/client2.png" class="img-responsive" alt=""></li></div><div class="owl-item" style="width: 228px;"><li><img src="./Nexus Landing Page_files/client3.png" class="img-responsive" alt=""></li></div><div class="owl-item" style="width: 228px;"><li><img src="./Nexus Landing Page_files/client4.png" class="img-responsive" alt=""></li></div><div class="owl-item" style="width: 228px;"><li><img src="./Nexus Landing Page_files/client5.png" class="img-responsive" alt=""></li></div><div class="owl-item" style="width: 228px;"><li><img src="./Nexus Landing Page_files/client6.png" class="img-responsive" alt=""></li></div><div class="owl-item" style="width: 228px;"><li><img src="./Nexus Landing Page_files/client7.png" class="img-responsive" alt=""></li></div><div class="owl-item" style="width: 228px;"><li><img src="./Nexus Landing Page_files/client8.png" class="img-responsive" alt=""></li></div><div class="owl-item" style="width: 228px;"><li><img src="./Nexus Landing Page_files/client9.png" class="img-responsive" alt=""></li></div></div></div>
+							
+							
+							
+							
+							
+							
+							
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="faq-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<!-- <h2 class="tac">frequently asked questions</h2> -->
+						<div class="section-title st-center">
+							<h3>Some questions</h3>
+							<p>frequently asked questions</p>
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="col-md-6">
+						<div class="faq">
+							<h3><i class="fa fa-question-circle"></i> Minime paulo beatus stare?</h3>
+							<p>Praesidium quaerat doloribus turpis fruuntur vocant postremo optimus utraque, veserim vitae appellant fructuosam, mediocris consistat impetu illae coniunctione modi consequentis nosque, vis qui deorum, poenis fuisse timorem ferae fastidium.</p>
+						</div>
+						<div class="faq">
+							<h3><i class="fa fa-question-circle"></i> Ferentur interrogari diceret?</h3>
+							<p>Pertinerent non importari, populo faciendi civium vetuit. Gravitate numquam praesentium fabulas. Abest ponatur ineruditus restat consoletur causam, ordiamur temperantiam repellat desistemus conquirendae molestia aiunt discenda monet.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="faq">
+							<h3><i class="fa fa-question-circle"></i> Dicent erigimur secutus fortunae?</h3>
+							<p>Quarum difficilius aegritudo epularum municipem alias. Vidisse litteris, rationibus eadem, mandaremus maluisset, delectus terrore angusta deduceret numquam fidelissimae mens gravissimo propter, tradit, fastidium facta facerem qua quippiam vacuitate cupiditatum admirer navigandi.</p>
+						</div>
+						<div class="faq">
+							<h3><i class="fa fa-question-circle"></i> Molestiae dedocere effluere?</h3>
+							<p>Habeo mala nocet perpetiuntur legendos dicemus levitatibus abducat futura, occultarum probant vitae evertunt laudantium docendi difficilem, offendit concederetur tuo hortensio deserere, molita gaudemus titillaret difficilius, parum timeret unum molestiam omnis vitae.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="call-us">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3>如果您对我们感兴趣?</h3>
+						<a href="http://localhost:63342/xjbch/index.html#" class="btn btn-default-o btn-lg">现在联系我们</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<img width="100%" src="./Nexus Landing Page_files/logo@2x.png">
+					</div>
+					<div class="col-md-6">
+						<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla. Donec a neque libero. Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa.
+
+							Read more</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-primary">
+						© <a href="http://localhost:63342/xjbch/index.html#">诚客奕品</a> 2015.
+						备案：<a href="http://localhost:63342/xjbch/index.html#">xxxxxxxxxxx</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="./Nexus Landing Page_files/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="./Nexus Landing Page_files/bootstrap.min.js"></script>
+		<script src="./Nexus Landing Page_files/jquery.easing.min.js"></script>
+		<script src="./Nexus Landing Page_files/jquery.appear.js"></script>
+		<script src="./Nexus Landing Page_files/jquery.nicescroll.min.js"></script>
+		<script src="./Nexus Landing Page_files/jquery.countTo.js"></script>
+		<script src="./Nexus Landing Page_files/jquery.shuffle.modernizr.js"></script>
+		<script src="./Nexus Landing Page_files/jquery.shuffle.js"></script>
+		<script src="./Nexus Landing Page_files/owl.carousel.js"></script>
+		<script src="./Nexus Landing Page_files/jquery.ajaxchimp.min.js"></script>
+		<script src="./Nexus Landing Page_files/script.js"></script>
+	
+</body></html>
