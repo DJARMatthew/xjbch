@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>循环流化床锅炉低氮燃烧|SNCR|循环流化床锅炉烟气脱硝子|锅炉增加出力——北京先进博昌科技有限公司</title>
+    <meta name="keywords" content="循环流化床锅炉低氮燃烧,SNCR,循环流化床锅炉烟气脱硝子,锅炉增加出力">
+    <meta name="description" content="北京先进博昌科技有限公司专业提供循环流化床锅炉低氮燃烧,SNCR,循环流化床锅炉烟气脱硝子,锅炉增加出力">
+    <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .faq {
+            margin-bottom: 26px;
+        }
+        .features-desc{
+           background:#1a87b7; background-image: url(images/intro-bg.png);  background-size: cover; color:#fff; line-height:1.6em; color:#dbf2c9
+        }
+        .st-feature .st-feature-icon{
+            color: #fff;
+            background-color: #1A87B7;
+        }
+        .st-feature:hover .st-feature-icon{
+            color:#1a87b7;
+        }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body data-spy="scroll" data-target=".main-nav">
+
+<header class="st-navbar">
+    <nav class="navbar navbar-default navbar-fixed-top clearfix">
+        <div class="container"><!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#sept-main-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" class="img-responsive"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse main-nav" id="sept-main-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="product.html">产品</a></li>
+                    <li><a href="news.html">公司新闻</a></li>
+                    <li><a href="projects.html">案例</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+</header>
+
+<section class="home" id="home" data-stellar-background-ratio="0.4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="st-home-unit">
+                    <div class="hero-txt">
+                        <p class="hero-work">锅炉节能改造 - 环保高科技企业 - 技术咨询服务</p>
+
+                        <h2 class="hero-title">先进博昌</h2>
+
+                        <h2 class="hero-title">404/502 服务器错误或未找到资源！</h2>
+                        <a href="index.html" class="btn btn-main btn-lg">返回首页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mouse-icon">
+        <div class="wheel"></div>
+    </div>
+</section>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    var fadeStart=$(window).height()/3 // 100px scroll or less will equiv to 1 opacity
+            ,fadeUntil=$(window).height() // 200px scroll or more will equiv to 0 opacity
+            ,fading = $('.st-home-unit')
+            ,fading2 = $('.hero-overlayer')
+            ;
+
+    $(window).bind('scroll', function(){
+        var offset = $(document).scrollTop()
+                ,opacity=0
+                ,opacity2=1
+                ;
+        if( offset<=fadeStart ){
+            opacity=1;
+            opacity2=0;
+        }else if( offset<=fadeUntil ){
+            opacity=1-offset/fadeUntil;
+            opacity2=offset/fadeUntil;
+        }
+        fading.css({'opacity': opacity});
+
+        if (offset >= 120) {
+            $('.st-navbar').addClass("st-navbar-mini");
+        } else if (offset <= 119) {
+            $('.st-navbar').removeClass("st-navbar-mini");
+        }
+    });
+</script>
+</body>
+</html>

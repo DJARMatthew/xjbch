@@ -1159,7 +1159,14 @@ ul.styled-list.list-star li:before {
   margin-bottom: 40px;
 }
 
-/* 9 PORTFOLIO SECTION */ 
+/* 9 PORTFOLIO SECTION */
+.projects{
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.project-img{
+  border-radius: 6px;
+}
 
 .clients {
   padding: 70px 0;
@@ -1706,12 +1713,18 @@ footer.site-footer a:hover {
   .widgets{
     display: none;
   }
+  #searp{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {.navbar-default .navbar-collapse, .navbar-default .navbar-form {background:#000; border:none}
 .home .hero-txt .hero-title {font-size:42px; line-height:normal}
   .block{padding: 0}
   .widgets{
+    display: none;
+  }
+  #searp{
     display: none;
   }
 }
