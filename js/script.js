@@ -30,7 +30,14 @@ jQuery('.st-ff-count').appear();
 /* tooltip */	
 jQuery('[data-toggle="tooltip"]').tooltip();
 
-
+/*about-slider*/
+jQuery('#owl-about').owlCarousel({
+    navigation : false, // Show next and prev buttons
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    singleItem:true,
+    autoPlay:true
+})
 /* Testimonials */
 jQuery(".testimonials-carousel ul").owlCarousel({
         items: 1,
@@ -48,7 +55,12 @@ jQuery('.clients-carousel').owlCarousel({
     	autoPlay: true,
     	pagination: false
     });
-	
+jQuery('.clients-carousel2').owlCarousel({
+    	items: 2,
+    	autoPlay: true,
+    	pagination: false
+    });
+
 /* Subscribe */	
 jQuery(".subscribe-form").ajaxChimp({
         callback: mcCallback,
@@ -91,10 +103,10 @@ jQuery('.contact-form').submit(function () {
       if(!checkEmpty($this.find('#fname'))){
         result=false;
       }
-      if(!validateEmail($this.find('#email'))) {
+      if(!validateEmail($this.find('#phone'))) {
         result=false;
       }
-      if(!checkEmpty($this.find('#mssg'))) {
+      if(!checkEmpty($this.find('#company'))) {
         result=false;
       }
       
@@ -137,27 +149,10 @@ jQuery('.contact-form').submit(function () {
 
 });
 
-/* Portfolio */	
+/* Portfolio */
 jQuery(window).load(function () {
-	var $grid = $('.grid'),
-		$sizer = $grid.find('.shuffle__sizer'),
-		$filterType = $('#filter input[name="filter"]');
 
-	$grid.shuffle({
-		itemSelector: '.portfolio-item',
-		sizer: $sizer
-	});
 
-	$filterType.change(function(e) {
-		var group = $('#filter input[name="filter"]:checked').val();
-
-		$grid.shuffle('shuffle', group);
-
-		$('label.btn-main').removeClass('btn-main');
-		$('input[name="filter"]:checked').parent().addClass('btn-main');
-	});
-	
-	
    function home_height () {
 		var element = $('.st-home-unit'),
 			elemHeight = element.height(),
@@ -175,33 +170,6 @@ jQuery(window).resize(function () {
 		home_height ();
 	});
 
+/* Nav Scroll */
 
-	var fadeStart=$(window).height()/3 // 100px scroll or less will equiv to 1 opacity
-    ,fadeUntil=$(window).height() // 200px scroll or more will equiv to 0 opacity
-    ,fading = $('.st-home-unit')
-    ,fading2 = $('.hero-overlayer')
-	;
-	
-/* Nav Scroll */	
-jQuery(window).bind('scroll', function(){
-	    var offset = $(document).scrollTop()
-	        ,opacity=0
-	        ,opacity2=1
-	    ;
-	    if( offset<=fadeStart ){
-	        opacity=1;
-	        opacity2=0;
-	    }else if( offset<=fadeUntil ){
-	        opacity=1-offset/fadeUntil;
-	        opacity2=offset/fadeUntil;
-	    }
-	    fading.css({'opacity': opacity});
-
-	    if (offset >= 120) {
-	    	$('.st-navbar').addClass("st-navbar-mini");
-	    } else if (offset <= 119) {
-	    	$('.st-navbar').removeClass("st-navbar-mini");
-	    }
 });
-
-});	
