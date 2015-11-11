@@ -27,8 +27,22 @@ jQuery('.st-ff-count').appear();
 		});
 	});
 
+/*fixnav*/
+jQuery('#gotop').click(function () {
+   $('html,body').animate({scrollTop:0},800);
+});
+
 /* tooltip */	
 jQuery('[data-toggle="tooltip"]').tooltip();
+
+/*popover*/
+
+jQuery('[data-toggle="popover"]').popover({
+    content: '电话：0000-00000000-000',
+    placement: 'left',
+    trigger: 'hover',
+    container: 'body'
+});
 
 /*about-slider*/
 jQuery('#owl-about').owlCarousel({
@@ -37,7 +51,7 @@ jQuery('#owl-about').owlCarousel({
     paginationSpeed : 400,
     singleItem:true,
     autoPlay:true
-})
+});
 /* Testimonials */
 jQuery(".testimonials-carousel ul").owlCarousel({
         items: 1,

@@ -1686,6 +1686,62 @@ footer.site-footer a:hover {
   color: #1a87b7;
 }
 
+#fixnav{
+  position: fixed;width: 80px;right: 60px;bottom: 480px;background-color: #1a86b6;
+  height: 160px;border: 1px solid #FFFFFF;z-index: 999;
+}
+#fixnav>ul>li{
+  width: 100%;height: 80px;
+}
+#fixnav>ul>li>a{
+  width: 100%;
+  display: block;
+  height: 100%;
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+  padding-top:18px;
+}
+
+@-webkit-keyframes shakeph {
+  0%{
+    -webkit-transform:translate(2px, 2px);
+  }
+  25%{
+    -webkit-transform:translate(-2px, -2px);
+  }
+  50%{
+    -webkit-transform:translate(0px, 0px);
+  }
+  75%{
+    -webkit-transform:translate(2px, -2px);
+  }
+  100%{
+    -webkit-transform:translate(-2px, 2px);
+  }
+}
+@keyframes shakeph {
+  0%{
+    transform:translate(2px, 2px);
+  }
+  25%{
+    transform:translate(-2px, -2px);
+  }
+  50%{
+    transform:translate(0px, 0px);
+  }
+  75%{
+    transform:translate(2px, -2px);
+  }
+  100%{
+    transform:translate(-2px, 2px);
+  }
+}
+#shakeph{
+  -webkit-animation:shakeph 0.2s infinite;
+  animation:shakeph 0.2s infinite;
+}
+
 .navbar-toggle {border-radius:0px; border:2px #fff solid; color:#fff; margin-top:30px}
 .navbar-default .navbar-toggle .icon-bar {background-color:#fff}
 .navbar-default .navbar-toggle:hover {background-color:#1a87b7; border-color:#1a87b7}
@@ -1716,6 +1772,9 @@ footer.site-footer a:hover {
   #searp{
     display: none;
   }
+  #fixnav{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {.navbar-default .navbar-collapse, .navbar-default .navbar-form {background:#000; border:none}
@@ -1725,6 +1784,9 @@ footer.site-footer a:hover {
     display: none;
   }
   #searp{
+    display: none;
+  }
+  #fixnav{
     display: none;
   }
 }
