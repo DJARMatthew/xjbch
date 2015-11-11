@@ -459,6 +459,21 @@ h3 {font-size:20px;  letter-spacing: 0.5px; font-weight:bold}
 /* ---------------------------------------------- /*
  * Mouse animate icon
 /* ---------------------------------------------- */
+.mouse-text{
+  margin:0;
+  padding:0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  animation: change 2s linear 0s infinite;
+}
+@keyframes change {
+  0% {color:#ffffff}
+  25%{color:#eeeeee}
+  50%{color:#1a87b7}
+  75%{color: #245269}
+  100%{color: #f2f2f2}
+}
 .mouse-icon {
   position: absolute;
   left: 50%;
@@ -624,7 +639,6 @@ h3 {font-size:20px;  letter-spacing: 0.5px; font-weight:bold}
   /* Temp CSS */
   /* Temp CSS End */
 }
-
 /*.home:after {*/
     /*display: block;*/
     /*content: '';*/
