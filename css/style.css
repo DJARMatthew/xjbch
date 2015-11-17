@@ -1407,7 +1407,9 @@ ul.styled-list.list-star li:before {
   border-bottom: 1px dotted #f2f2f2;
   margin-bottom: 60px;
 }
-
+.popover-content{
+  padding: 0;
+}
 .blog-post:last-child { margin-bottom:0px; border-bottom:none}
 
 .author{

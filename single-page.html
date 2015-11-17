@@ -61,6 +61,7 @@
                         <span class="author">先进博昌</span>,
                         <span>分类： <a href="#">公司新闻</a></span>,
                         <span>时间：<strong>2015-10-27</strong></span>
+                        <span><a role="button" class="wxshare" href="javascript:;"><i class="fa fa-weixin"></i></a></span>
                     </div>
                     <h2 class="post-title"><a href="#">新闻标题</a></h2>
                     <div class="post-thumb"><a href="#"><img src="photos/post-thumb.jpg" alt="" class="img-responsive"></a></div>
@@ -137,33 +138,55 @@
                                     <div class="post-meta">
                                         <span>时间： <a href="#">2015-10-27</a></span>
                                     </div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="recent-post clearfix">
-                                    <a href="single-page.html" class="post-thumb"><img src="photos/post-thumb-sm.jpg" alt="blog post"></a>
-                                    <h2 class="post-title">
-                                        <a href="single-page.html">A example blog post with image</a>
-                                    </h2>
-                                    <div class="post-meta">
-                                        <span>时间： <a href="#">2015-10-27</a></span>
-                                    </div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="recent-post clearfix">
-                                    <a href="single-page.html" class="post-thumb"><img src="photos/post-thumb-sm.jpg" alt="blog post"></a>
-                                    <h2 class="post-title">
-                                        <a href="single-page.html">A example blog post with image</a>
-                                    </h2>
-                                    <div class="post-meta">
-                                        <span>时间： <a href="#">2015-10-27</a></span>
-                                    </div>
                                 </div>
                             </li>
                         </ul>
+                    </div>
+                    <div class="widget">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            直属公司
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <a href="#">分公司</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            商业伙伴
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <a href="#">商业伙伴</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            政府部门组织
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <a href="#">政府部门组织</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -224,6 +247,25 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.appear.js"></script>
 <script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery-qrcode/1.0.0/jquery.qrcode.min.js"></script>
 <script src="js/script.js"></script>
+<script>
+    $('.wxshare').popover({
+        container: '.blog',
+        html: true,
+        placement:'bottom',
+        trigger:'focus',
+        title:'<p class="text-center" style="margin: 0">扫一扫</p>',
+        content:'<div class="qrcode"></div>'
+    });
+    $('.wxshare').on('shown.bs.popover',function(){
+
+        $('.qrcode').qrcode({
+            text: document.location.href,
+            width: 100,
+            height:100
+        })
+    })
+</script>
 </body>
 </html>
